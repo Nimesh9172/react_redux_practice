@@ -5,7 +5,7 @@ import { useDispatch,useSelector } from 'react-redux';
 const CartButton = (props) => {
 
   const totalQuantity = useSelector(state => state.cartItems.totalQuantity)
-  console.log(totalQuantity)
+  // console.log(totalQuantity)
 
   const dispatch = useDispatch()
 
