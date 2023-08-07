@@ -9,7 +9,7 @@ const cartItemSlice = createSlice({
     replaceCart(state, action) {
       // console.log(action.payload)
       state.totalQuantity = action.payload.totalQuantity;
-      state.cartItem = action.payload.cartItem || [];
+      state.cartItem = action.payload.items || [];
     },
     addItem(state, action) {
       const existingCartItemIndex = state.cartItem.findIndex(
